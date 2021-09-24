@@ -1,0 +1,116 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #e5e5e5;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.app{
+  width: 400px;
+  min-height: 500px;
+  border-radius:20px;
+  box-shadow: 10px 10px 13px #0002,
+              -10px -10px 13px #fff7;
+}
+form{
+  margin: 20px;
+  height: 40px;
+  width: 100%;
+}
+form input,
+form button {
+  width: 250px;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 5px;
+  margin-top: 20px;
+  background: transparent;
+  box-shadow: inset -5px -5px 5px #fff7,
+              inset 5px 5px 5px #0002;
+  
+}
+form button{
+  width: 70px;
+  float: right;
+  margin-right: 50px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  box-shadow:-5px -5px 5px #fff7,
+              5px 5px 5px #0002;
+}
+h1{
+  text-align: center;
+  margin-top:35px;
+  text-transform: uppercase;
+  color: #e5e5e5 ;
+  text-shadow: -3px -3px 3px #fff7,
+                3px 3px 3px #0002; ;
+}
+/* ul li{
+  text-align: left;
+  list-style: none;
+  margin: 20px 30px;
+  padding: 8px;
+  box-shadow:-5px -5px 5px #fff7,
+              5px 5px 5px #0002;
+  animation: opacity 0.2s linear;
+}
+@keyframes opacity{
+  from {
+    opacity: 0;
+    transform: scale(0.7)
+  }
+  to{}
+} */
+.todo-child{
+  font-weight: 500;
+
+}
+.list-todo{
+  margin: 25px;
+  display: flex;
+  justify-content:space-between;
+}
+.edit{
+  margin-right: 20px;
+  cursor: pointer;
+  color:rgb(97, 17, 247);
+
+}
+.save{
+  margin-right: 20px;
+  cursor: pointer;
+  color:rgb(169, 172, 13);
+}
+.delete{
+  cursor: pointer;
+  color:rgb(250, 0, 0);
+}
+.inputTodo{
+  background-color: #dadada;
+  outline: none;
+  border: none;
+  width: 260px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all 0.5;
+}
